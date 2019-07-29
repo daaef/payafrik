@@ -32,11 +32,27 @@
   font-family: 'GTEestiProText-Regular', sans-serif!important;
   box-sizing: border-box;
 }
+canvas {
+  display: block;
+  vertical-align: bottom; }
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: url("") no-repeat 50% 50%; }
+
+#stats {
+  display: none; }
+
+.login-logo{
+  filter: brightness(0) invert(1);
+}
 
 body {
   overflow-x: hidden;
   overflow-y: visible;
-  background: #1b67d4;
+  background: linear-gradient(to bottom, #1b74ff, #1b4daa);
 }
 
 .introloader {
@@ -78,29 +94,27 @@ body {
   top: 0;
   overflow: hidden;
   &:before{
+    opacity: .03;
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     background: url(../img/bgLogin.png) no-repeat;
-    filter: blur(10px);
-    opacity: .7;
     background-size: cover;
     z-index: 2;
   }
   &:after{
+    opacity: .03;
     content: '';
     position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translate(30%, 30%);
+    bottom: -138px;
+    right: -50px;
     height: 450px;
     width: 450px;
     background: url(../img/shape.png) no-repeat;
     background-size: cover;
     transform-origin: center;
-    filter: blur(10px);
     z-index: 1;
     animation: infinite-spinning 4.5s infinite linear;
   }
@@ -108,7 +122,7 @@ body {
 header{
   position: relative;
   z-index: 5;
-  background: rgba(27, 103, 212, 0.88);
+  //background: rgba(27, 103, 212, 0.88);
 }
 
 .login{
