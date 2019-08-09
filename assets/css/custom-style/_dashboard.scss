@@ -121,6 +121,32 @@
           }
         }
         .content{
+          .up{
+            width: 100%;
+            padding-bottom: 15px;
+            background: red;
+            flex: 45;
+            &>div{
+              flex-basis: calc(((100%) - (30px))/3);
+              &>div{
+                background: #000;
+                border: 1px solid white;
+                height: 100%;
+                flex-grow: 1;
+              }
+            }
+            .wal-1{
+              flex-grow: 3;
+            }
+          }
+          .down{
+            width: 100%;
+            padding-bottom: 15px;
+            background: blue;
+            flex: 55;
+          }
+          display: flex;
+          flex-direction: column;
           min-height: calc((100%) - (35px));
           background: #222429;
           width: 100%;

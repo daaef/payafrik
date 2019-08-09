@@ -44,6 +44,7 @@ var pJS = function(tag_id, params){
                     height: 100
                 }
             },
+
             opacity: {
                 value: .6,
                 random: false,
